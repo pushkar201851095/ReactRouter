@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Page404 from "./components/Page404";
+// import Page404 from "./components/Page404";
 import User from "./components/User";
 
 function App() {
