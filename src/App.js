@@ -4,6 +4,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Page404 from "./components/Page404";
+import User from "./components/User";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About/>} ></Route>
+          <Route path="/user/:name" element={<User/>}/>
           <Route path="/*" element={<Navigate to="/"/>}/>
         </Routes>
       </BrowserRouter>
