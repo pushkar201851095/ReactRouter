@@ -13,7 +13,7 @@ const NavBar = () => {
         className="nav-bar-link" to="/">Home</NavLink></li>
         <li><NavLink 
         style={({isActive})=>{return {color: isActive? 'skyblue':''}}}
-        className="nav-bar-link" to="/user">User</NavLink></li>
+        className="nav-bar-link" to="/contact">Contact</NavLink></li>
         <li><NavLink 
         style={({isActive})=>{return {color: isActive? 'skyblue':''}}}
         className="nav-bar-link" to="/filter">Filter</NavLink></li>
