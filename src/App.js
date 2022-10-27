@@ -10,6 +10,8 @@ import Contact from "./components/Contact";
 import Company from "./components/Company";
 import Channel from "./components/Channel";
 import Other from "./components/Other";
+import Login from "./components/Login";
+import Protected from "./components/Protected";
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
         <NavBar/>
       
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Protected Component={Home}/>}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="/about" element={<About/>} ></Route>
           <Route path="/user/:name" element={<User/>}></Route>
           <Route path="/filter" element={<Filter/>}></Route>
