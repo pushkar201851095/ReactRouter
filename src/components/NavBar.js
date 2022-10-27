@@ -14,6 +14,9 @@ const NavBar = () => {
         <li><NavLink 
         style={({isActive})=>{return {color: isActive? 'skyblue':''}}}
         className="nav-bar-link" to="/user">User</NavLink></li>
+        <li><NavLink 
+        style={({isActive})=>{return {color: isActive? 'skyblue':''}}}
+        className="nav-bar-link" to="/filter">Filter</NavLink></li>
         
       </ul>
     </div>
